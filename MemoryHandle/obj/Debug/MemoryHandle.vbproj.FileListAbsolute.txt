@@ -1,0 +1,10 @@
+C:\Users\Bryan\Documents\Visual Studio 2010\Projects\MemoryHandle\MemoryHandle\bin\Debug\MemoryHandle.dll
+C:\Users\Bryan\Documents\Visual Studio 2010\Projects\MemoryHandle\MemoryHandle\bin\Debug\MemoryHandle.pdb
+C:\Users\Bryan\Documents\Visual Studio 2010\Projects\MemoryHandle\MemoryHandle\bin\Debug\MemoryHandle.xml
+C:\Users\Bryan\Documents\Visual Studio 2010\Projects\MemoryHandle\MemoryHandle\bin\Debug\Microsoft.Xna.Framework.dll
+C:\Users\Bryan\Documents\Visual Studio 2010\Projects\MemoryHandle\MemoryHandle\bin\Debug\Microsoft.Xna.Framework.xml
+C:\Users\Bryan\Documents\Visual Studio 2010\Projects\MemoryHandle\MemoryHandle\obj\Debug\MemoryHandle.Resources.resources
+C:\Users\Bryan\Documents\Visual Studio 2010\Projects\MemoryHandle\MemoryHandle\obj\Debug\MemoryHandle.vbproj.GenerateResource.Cache
+C:\Users\Bryan\Documents\Visual Studio 2010\Projects\MemoryHandle\MemoryHandle\obj\Debug\MemoryHandle.dll
+C:\Users\Bryan\Documents\Visual Studio 2010\Projects\MemoryHandle\MemoryHandle\obj\Debug\MemoryHandle.xml
+C:\Users\Bryan\Documents\Visual Studio 2010\Projects\MemoryHandle\MemoryHandle\obj\Debug\MemoryHandle.pdb

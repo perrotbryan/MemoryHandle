@@ -1,0 +1,33 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+MemoryHandle
+</name>
+</assembly>
+<members>
+<member name="M:MemoryHandle.Scanner.Find(System.Byte[],System.Byte[],System.String)">
+	<summary>
+ Searches a pattern (array of bytes) inside the buffer (array of bytes)
+ </summary>
+	<param name="buffer"></param>
+	<param name="pattern"></param>
+	<param name="mask"></param>
+	<returns>Returns the position found</returns>
+	<remarks></remarks>
+</member><member name="P:MemoryHandle.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:MemoryHandle.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:MemoryHandle.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+</members>
+</doc>

@@ -1,0 +1,20 @@
+E:\Users\Bryan\AppData\Local\Temporary Projects\ESP\bin\Debug\ESP.exe.config
+E:\Users\Bryan\AppData\Local\Temporary Projects\ESP\bin\Debug\ESP.exe
+E:\Users\Bryan\AppData\Local\Temporary Projects\ESP\bin\Debug\ESP.pdb
+E:\Users\Bryan\AppData\Local\Temporary Projects\ESP\bin\Debug\ESP.xml
+E:\Users\Bryan\AppData\Local\Temporary Projects\ESP\obj\Debug\ESP.vbprojResolveAssemblyReference.cache
+E:\Users\Bryan\AppData\Local\Temporary Projects\ESP\obj\Debug\MainWindow.g.vb
+E:\Users\Bryan\AppData\Local\Temporary Projects\ESP\obj\Debug\Application.g.vb
+E:\Users\Bryan\AppData\Local\Temporary Projects\ESP\obj\Debug\ESP_MarkupCompile.cache
+E:\Users\Bryan\AppData\Local\Temporary Projects\ESP\obj\Debug\ESP_MarkupCompile.lref
+E:\Users\Bryan\AppData\Local\Temporary Projects\ESP\obj\Debug\MainWindow.baml
+E:\Users\Bryan\AppData\Local\Temporary Projects\ESP\obj\Debug\ESP.g.resources
+E:\Users\Bryan\AppData\Local\Temporary Projects\ESP\obj\Debug\ESP.Resources.resources
+E:\Users\Bryan\AppData\Local\Temporary Projects\ESP\obj\Debug\ESP.vbproj.GenerateResource.Cache
+E:\Users\Bryan\AppData\Local\Temporary Projects\ESP\obj\Debug\ESP.exe
+E:\Users\Bryan\AppData\Local\Temporary Projects\ESP\obj\Debug\ESP.xml
+E:\Users\Bryan\AppData\Local\Temporary Projects\ESP\obj\Debug\ESP.pdb
+E:\Users\Bryan\Documents\Visual Studio 2015\Projects\ESP\ESP\bin\Debug\ESP.exe.config
+E:\Users\Bryan\Documents\Visual Studio 2015\Projects\ESP\ESP\obj\Debug\ESP.exe
+E:\Users\Bryan\Documents\Visual Studio 2015\Projects\ESP\ESP\obj\Debug\ESP.xml
+E:\Users\Bryan\Documents\Visual Studio 2015\Projects\ESP\ESP\obj\Debug\ESP.pdb

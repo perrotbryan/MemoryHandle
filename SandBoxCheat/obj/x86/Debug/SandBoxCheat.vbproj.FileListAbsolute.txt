@@ -10,3 +10,6 @@ C:\Users\Bryan\Documents\Visual Studio 2010\Projects\MemoryHandle\SandBoxCheat\o
 C:\Users\Bryan\Documents\Visual Studio 2010\Projects\MemoryHandle\SandBoxCheat\obj\x86\Debug\SandBoxCheat.exe
 C:\Users\Bryan\Documents\Visual Studio 2010\Projects\MemoryHandle\SandBoxCheat\obj\x86\Debug\SandBoxCheat.xml
 C:\Users\Bryan\Documents\Visual Studio 2010\Projects\MemoryHandle\SandBoxCheat\obj\x86\Debug\SandBoxCheat.pdb
+E:\Users\Bryan\Documents\Visual Studio 2015\Projects\MemoryHandle\SandBoxCheat\obj\x86\Debug\SandBoxCheat.exe
+E:\Users\Bryan\Documents\Visual Studio 2015\Projects\MemoryHandle\SandBoxCheat\obj\x86\Debug\SandBoxCheat.xml
+E:\Users\Bryan\Documents\Visual Studio 2015\Projects\MemoryHandle\SandBoxCheat\obj\x86\Debug\SandBoxCheat.pdb

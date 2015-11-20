@@ -15,12 +15,11 @@ Module Core
 
     ' Offsets
     Public dwLocalPlayer As IntPtr
-    Public dwEntityList As IntPtr = &H4A1D3A4
+    Public dwEntityList As IntPtr
     Public dwClientState As IntPtr
-    Public dwViewAngles As IntPtr = &H4CE0
-    Public dwViewMatrix As IntPtr = &H4A12934
+    Public dwViewAngles As IntPtr
+    Public dwViewMatrix As IntPtr
     Public dwCrosshairOffset As IntPtr
-    Public dwEnginePointer As IntPtr = &H5D0214
 
 
     ' Static Offsets
@@ -184,7 +183,14 @@ Module Core
 
     Private Sub GetOffsets()
         Dim time As Stopwatch = Stopwatch.StartNew()
-        Dim b() As Byte
+
+		'dwEngine = MemoryHandle.Scanner.FindOffset(Pid, dwGame, "0xC2\0x00\0x00\0xCC\0xCC\0x8B\0x0D\0x00\0x00\0x00\0x00\0x33\0xC0\0x83\0xB9", '"x??xxxx????xxxx", 4096) - dwGame
+		'If dwEngine <> IntPtr.Zero - dwGame Then
+		'	Console.WriteLine("Engine fount at " & Hex(CInt(dwEngine)))
+		'Else
+		'	Console.WriteLine("Engine not found")
+		'End If
+		
         dwLocalPlayer = MemoryHandle.Scanner.FindOffset(Pid, dwClient, "xA3\x00\x00\x00\x00\xC7\x05\x00\x00\x00\x00\x00\x00\x00\x00\xE8\x00\x00\x00\x00\x59\xC3\x6A\x00", "x????xx????????x????xxxx", 4096) - dwClient + &H10
         If dwLocalPlayer <> IntPtr.Zero - dwClient + &H10 Then
             Console.WriteLine("LocalPlayer fount at " & Hex(CInt(dwLocalPlayer)))
@@ -195,7 +201,6 @@ Module Core
         dwEntityList = MemoryHandle.Scanner.FindOffset(Pid, dwClient, "x05\x00\x00\x00\x00\xC1\xE9\x00\x39\x48\x04", "x????xx?xxx", 4096) - dwClient
         If dwEntityList <> IntPtr.Zero - dwClient Then
             Console.WriteLine("EntityList found at " & Hex(CInt(dwEntityList)))
-            b = BitConverter.GetBytes(CInt(dwEntityList + dwEngine))
         Else
             Console.WriteLine("EntityList not found")
         End If
@@ -211,18 +216,23 @@ Module Core
         dwClientState = MemoryHandle.Scanner.FindOffset(Pid, dwEngine, "xFF\x15\x00\x00\x00\x00\xA1\x00\x00\x00\x00\x83\xC4\x1C", "xx!!!!x????xxx", 4096) - dwEngine
         If dwClientState <> IntPtr.Zero - dwEngine Then
             Console.WriteLine("ClientState found at " & Hex(CInt(dwClientState)))
-            b = BitConverter.GetBytes(CInt(dwClientState + dwEngine))
         Else
             Console.WriteLine("ClientState not found")
         End If
+		
+		dwViewMatrix = MemoryHandle.Scanner.FindOffset(Pid, dwClient, "0x53\0x8B\0xDC\0x83\0xEC\0x08\0x83\0xE4\0xF0\0x83\0xC4\0x04\0x55\0x8B\0x6B\0x04\0x89\0x6C\0x24\0x04\0x8B\0xEC\0xA1\0x00\0x00\0x00\0x00\0x81\0xEC\0x98\0x03\0x00\0x00", "xxxxxxxxxxxxxxxxxxxxxxx????xxxxxx", 4096) - dwClient
+		If dwViewMatrix <> IntPtr.Zero - dwClient Then
+			Console.WriteLine("ViewMatrix found at " & Hex(CInt(dwViewMatrix)))
+		Else
+			Console.WriteLine("ViewMatrix not found")
+		End If
 
         '0x4CE0
-        dwViewAngles = MemoryHandle.Scanner.FindOffset(Pid, dwClientState, "x83\xC4\x1C\xF3\x0F\x10\x05\x00\x00\x00\x00\xF3\x0F\x11\x80\x00\x00\x00\x00", "xxxxxxx!!!!xxxx????", 4096) - dwClientState - dwEngine
+        dwViewAngles = MemoryHandle.Scanner.FindOffset(Pid, dwClientState, "\x8B\x50\x14\xB9\x00\x00\x00\x00\xFF\xD2\x8B\x04\x85\x00\x00\x00\x00\x83\xC0\x08\x5D\xC3", "xxxx????xxxxx????xxxxx", 4096) - dwClientState - dwEngine
         If dwViewAngles <> IntPtr.Zero - dwClientState - dwEngine Then
             Console.WriteLine("ViewAngles found at " & Hex(CInt(dwViewAngles)))
         Else
             Console.WriteLine("ViewAngles not found")
-            dwViewAngles = &H4CE0
         End If
         time.Stop()
 
